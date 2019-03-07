@@ -1,0 +1,53 @@
+{
+  "name": "oadw-dash",
+  "version": "1.0.0",
+  "description": "A dashboard that displays OADW data using GraphQL APIs",
+  "main": "index.js",
+  "dependencies": {
+    "apollo-boost": "^0.1.23",
+    "apollo-link": "^1.2.6",
+    "apollo-link-context": "^1.0.12",
+    "bootstrap": "^4.2.1",
+    "dash-core-components": "^0.43.0",
+    "graphql": "^14.0.2",
+    "i18next": "^14.0.1",
+    "node-sass": "^4.11.0",
+    "plotly.js": "^1.43.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-apollo": "^2.3.3",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-i18next": "^9.0.10",
+    "react-plotly.js": "^2.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.3",
+    "react-sizeme": "^2.5.2",
+    "reactstrap": "^7.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Addyvan/oadw-dash.git"
+  },
+  "author": "Addison van den Hoeven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Addyvan/oadw-dash/issues"
+  },
+  "homepage": "https://github.com/Addyvan/oadw-dash#readme"
+}
