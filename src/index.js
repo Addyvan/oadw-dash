@@ -10,13 +10,13 @@ import { ApolloProvider } from 'react-apollo';
 import ApolloClient from "apollo-boost";
 
 const client = new ApolloClient({
-  uri: 'https://feed.gccollab.ca/',
+  uri: 'https://localhost:4000/',
   addTypename: false
 });
 
 ReactDOM.render(
     <I18nextProvider i18n={ i18n }>
-      <ApolloProvider client={client}>
+      <ApolloProvider client={client} >
         <App />
       </ApolloProvider>
     </I18nextProvider>,  

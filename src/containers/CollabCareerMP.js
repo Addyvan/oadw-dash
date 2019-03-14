@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-class Collab extends Component {
+class CollabCareerMP extends Component {
   componentDidMount() {
-    document.title = 'GCcollab Data';
+    document.title = 'GCcollab CareerMP Data';
   }
 
   render() {
@@ -14,4 +14,4 @@ class Collab extends Component {
   }
 }
 
-export default Collab;
+export default CollabCareerMP;

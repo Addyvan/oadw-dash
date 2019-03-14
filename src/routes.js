@@ -7,7 +7,8 @@ import DefaultLayout from "./layouts/Default";
 // Route Views
 import Overview from "./containers/Overview";
 import NewCollab from "./containers/NewCollab";
-import Collab from "./containers/Collab";
+import CollabCareerMP from "./containers/CollabCareerMP";
+import ConnexCareerMP from "./containers/ConnexCareerMP";
 
 export default [
   {
@@ -22,9 +23,14 @@ export default [
     component: Overview
   },
   {
-    path: "/collab",
+    path: "/collab-careermp",
     layout: DefaultLayout,
-    component: Collab
+    component: CollabCareerMP
+  },
+  {
+    path: "/connex-careermp",
+    layout: DefaultLayout,
+    component: ConnexCareerMP
   },
   {
     path: "/newcollab",
