@@ -2,21 +2,31 @@ import React from 'react';
 import Plot from 'react-plotly.js';
 
 class Graph extends React.Component {
+
   render() {
     return (
-      <Plot
-        data={[
-          {
-            x: [1, 2, 3],
-            y: [2, 6, 3],
-            type: 'scatter',
-            mode: 'lines+points',
-            marker: {color: 'red'},
-          },
-          {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
-        ]}
-        layout={ {width: '90%', height: 500, title: 'A Fancy Plot'} }
-      />
+        <Plot
+          data={[
+            {type: this.props.type, 
+            x: this.props.x, 
+            y: this.props.y,
+            orientation: this.props.orientation,
+            color: ''},
+          ]}
+          layout={ {width: 2.5, 
+                    autosize: true,
+                    title: this.props.title,
+                    margin: {l: this.props.leftMargin,
+                            b: 50,
+                            r: 0,
+                            t: 50}} }
+          responsive = {true}
+          useResizeHandler = {true}
+          style = {{width: "100%",
+                    height: "100%",
+                    display: "block"}}
+          config= {{ displayModeBar: false }}
+        />
     );
   }
 }

@@ -10,7 +10,7 @@ import Footer from "../components/layout/Footer";
 const DefaultLayout = ({ children, noNavbar, noFooter }) => (
   <Container id="main" className="flex-grow-1" fluid>
       {!noNavbar && <NavBar />}
-    <Row style={{height: "100%"}}>
+    <Row style={{height: "100%", overflowX: "hidden"}}>
       <Col
         lg="2"
         md="3"

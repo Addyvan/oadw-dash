@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Graph from './../assets/graphs/graph.js';
-import { Card, Button, CardTitle, CardText, CardHeader, CardFooter} from 'reactstrap';
-import {Container} from 'react-bootstrap';
-import {Row} from 'react-bootstrap';
-import {Col} from 'react-bootstrap';
+import { Card, Button, CardTitle, CardText, CardHeader, CardFooter, Container, Row, Col, CardBody} from 'reactstrap';
 import "../styles/custom.scss";
 
 class ConnexCareerMP extends Component {
@@ -13,9 +10,9 @@ class ConnexCareerMP extends Component {
 
   render() {
     return (
-      <Container id = 'container' style={{marginRight: '10px', marginLeft: '10px', marginTop: '10px'}}>
+      <Container fluid id = 'container' style={{marginRight: '10px', marginLeft: '10px', marginTop: '10px'}}>
         <Row>
-          <Col sm={4} md = {4} lg = {4}>
+          <Col sm={4} md = {4} lg = {4} >
             <Card inverse style={{ backgroundColor: '#694B82', borderColor: '#694B82' }}>
               <CardHeader style={{ textAlign: 'center' }}>Career Marketplace accounts for</CardHeader>
               <CardText style={{ fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>25%</CardText>
@@ -54,10 +51,13 @@ class ConnexCareerMP extends Component {
             </Card>
             <br />
 
-
           </Col>
           <Col xs={8}>
-          <Graph title=""></Graph>
+            <Card>
+              <CardBody>
+                <Graph title="Number of Users who hav Opted-Into each Oppurtunity Type"></Graph>
+              </CardBody>
+            </Card>
           </Col>
         </Row>
       </Container>

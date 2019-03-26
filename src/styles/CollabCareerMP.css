@@ -1,5 +1,9 @@
 #container{
-    width: 100%;
     padding-left: 10px !important;
     padding-right:10px !important;
+    margin-right: 10px !important;
+}
+#row{
+    margin-right: 10px !important;
+    width: 100% !important;
 }
