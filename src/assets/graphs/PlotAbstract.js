@@ -16,12 +16,11 @@ class PlotAbstract extends React.Component {
     });
   }
   
-  renderGraph(x, y, type, orientation, leftMargin, title, bottomMargin) {
-    console.log(bottomMargin)
+  renderGraph(x, y, type, orientation, leftMargin, title, bottomMargin, values, labels, height, topMargin) {
     if (this.state.showingGraph)
-      return <Graph x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title}/>;
+      return <Graph x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} values = {values} labels = {labels} height = {height} topMargin = {topMargin}/>;
     else
-      return <DataTable x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title}/>;
+      return <DataTable x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} bottomMargin = {bottomMargin} values = {values} labels = {labels} height = {height} topMargin = {topMargin}/>;
   }
 }
 

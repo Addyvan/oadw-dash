@@ -43,7 +43,7 @@ class CollabCareerMP extends Component {
 
           </Col>
           <Col xs = {9} sm={9} md = {9} lg = {9}>
-            <Card style = {{height: "490px"}}>
+            <Card style = {{height: "492px"}}>
               <CardBody> 
                 <Plot title="Number of Users who have Opted Into each Oppurtunity Type" 
                           x={[3619,
@@ -73,7 +73,10 @@ class CollabCareerMP extends Component {
                           type="bar"
                           orientation="h"
                           leftMargin = "275"
-                          showing = {this.state.showing}>
+                          buttonPosition = "topRight"
+                          height= "100%"
+                          topMargin = "50"
+                          >
                     </Plot>
               </CardBody>
             </Card>
@@ -82,9 +85,9 @@ class CollabCareerMP extends Component {
 
         <Row>
         <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "620px"}}>
               <CardBody>
-                <PieChart title="Opportunities by Opportunity Status" 
+                <Plot title="Opportunities by Opportunity Status" 
                       values={[578,
                       9928,
                       83,
@@ -97,19 +100,18 @@ class CollabCareerMP extends Component {
                       "Cancelled", 
                       "Was Offered", 
                       "Accepted"]}
-                      type="pie">
-                </PieChart>
-                <div style = {{position:"absolute", right: "10px", bottom: "10px", display: "block", zIndex: "10"}}>
-                <Button style = {{marginRight: "10px"}} color="secondary" size="sm">Download CSV</Button>
-                <Button color="secondary" size="sm">View as Table</Button>
-                </div>
+                      type="pie"
+                      buttonPosition="bottomRight"
+                      height= "550px"
+                      topMargin = "80">
+                </Plot>
               </CardBody>
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "620px"}}>
               <CardBody>
-                <PieChart title="Opportunities Posted by Opportunity Type" 
+                <Plot title="Opportunities Posted by Opportunity Type" 
                         values={[484,
                         111,
                         53,
@@ -122,19 +124,18 @@ class CollabCareerMP extends Component {
                         "Mentoring", 
                         "Skill Share", 
                         "Student"]}
-                        type="pie">
-                  </PieChart>
-                <div style = {{position:"absolute", right: "10px", bottom: "10px", display: "block", zIndex: "10"}}>
-                <Button style = {{marginRight: "10px"}} color="secondary" size="sm">Download CSV</Button>
-                <Button color="secondary" size="sm">View as Table</Button>
-                </div>
+                        type="pie"
+                        buttonPosition="bottomRight"
+                        height= "550px"
+                        topMargin = "80">                        >
+                  </Plot>
               </CardBody>
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "620px"}}>
               <CardBody>
-                <PieChart title="Referral Sources" 
+                <Plot title="Referral Sources" 
                         values={[484,
                         111,
                         53,
@@ -147,12 +148,11 @@ class CollabCareerMP extends Component {
                         "direct", 
                         "google", 
                         "Other"]}
-                        type="pie">
-                </PieChart>
-                <div style = {{position:"absolute", right: "10px", bottom: "10px", display: "block", zIndex: "10"}}>
-                <Button style = {{marginRight: "10px"}} color="secondary" size="sm">Download CSV</Button>
-                <Button color="secondary" size="sm">View as Table</Button>
-                </div>
+                        type="pie"
+                        buttonPosition="bottomRight"
+                        height= "550px"
+                        topMargin = "80">                        >
+                </Plot>
               </CardBody>
             </Card>
           </Col>
