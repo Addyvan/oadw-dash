@@ -14,7 +14,6 @@ class PieChart extends React.Component {
           layout={ {width: 2.5, 
             autosize: true,
             title: this.props.title,
-            displayModeBar: false,
             margin: {l: this.props.leftMargin,
                     b: 0,
                     r: 0,
@@ -22,7 +21,8 @@ class PieChart extends React.Component {
           responsive = {true}
           useResizeHandler = {true}
           style = {{width: "100%",
-                    height: "100%"}}
+                    height: "100%",
+                    display: "block"}}
           config= {{ displayModeBar: false }}
         />
     );
