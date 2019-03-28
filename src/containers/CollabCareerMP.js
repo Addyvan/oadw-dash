@@ -41,8 +41,9 @@ class CollabCareerMP extends Component {
 
           </Col>
           <Col xs = {9} sm={9} md = {9} lg = {9}>
-            <Card style = {{height: "492px"}}>
+            <Card style = {{height: "490px"}}>
               <CardBody> 
+                <h2>Number of Users who have Opted Into each Oppurtunity Type</h2>
                 <Plot title="Number of Users who have Opted Into each Oppurtunity Type" 
                           x={[3619,
                             5343,
@@ -72,8 +73,8 @@ class CollabCareerMP extends Component {
                           orientation="h"
                           leftMargin = "300"
                           buttonPosition = "topRight"
-                          height= "100%"
-                          topMargin = "50"
+                          height= "400px"
+                          topMargin = "0"
                           >
                     </Plot>
               </CardBody>
@@ -83,8 +84,9 @@ class CollabCareerMP extends Component {
 
         <Row>
         <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "620px"}}>
+            <Card style = {{height: "640px"}}>
               <CardBody>
+                <h2>Opportunities by Opportunity Status</h2>
                 <Plot title="Opportunities by Opportunity Status" 
                       values={[578,
                       9928,
@@ -101,14 +103,15 @@ class CollabCareerMP extends Component {
                       type="pie"
                       buttonPosition="bottomRight"
                       height= "550px"
-                      topMargin = "80">
+                      topMargin = "0">
                 </Plot>
               </CardBody>
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "620px"}}>
+            <Card style = {{height: "640px"}}>
               <CardBody>
+                <h2>Opportunities Posted by Opportunity Type</h2>
                 <Plot title="Opportunities Posted by Opportunity Type" 
                         values={[484,
                         111,
@@ -125,14 +128,15 @@ class CollabCareerMP extends Component {
                         type="pie"
                         buttonPosition="bottomRight"
                         height= "550px"
-                        topMargin = "80">                        >
+                        topMargin = "0">                        >
                   </Plot>
               </CardBody>
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "620px"}}>
+            <Card style = {{height: "640px"}}>
               <CardBody>
+                <h2>Referral Sources</h2>
                 <Plot title="Referral Sources" 
                         values={[100,
                         50,
@@ -149,7 +153,7 @@ class CollabCareerMP extends Component {
                         type="pie"
                         buttonPosition="bottomRight"
                         height= "550px"
-                        topMargin = "80">                        >
+                        topMargin = "0">                        >
                 </Plot>
               </CardBody>
             </Card>

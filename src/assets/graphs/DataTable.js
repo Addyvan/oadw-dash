@@ -8,7 +8,6 @@ class DataTable extends React.Component {
 
         return (
             <div>
-                <h2>{this.props.title}</h2>
                 <Table hover striped size = "sm">
                     <tbody>
                             {secondColumn.map((value,index) => {

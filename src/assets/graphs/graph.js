@@ -27,13 +27,12 @@ class Graph extends React.Component {
   }
 
   render() {
+    console.log(this.props.height)
     return (
       <Plot
         data={this.createData()}
         layout={ {width: 2.5, 
                   autosize: true,
-                  title: {text: this.props.title,
-                          font: {family:"Rubik", size: "28"} },
                   margin: {l: this.props.leftMargin,
                           b: 20,
                           r: 0,
