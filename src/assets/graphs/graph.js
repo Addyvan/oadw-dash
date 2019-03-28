@@ -37,7 +37,8 @@ class Graph extends React.Component {
                           b: 20,
                           r: 0,
                           t: this.props.topMargin},
-                  font: {family:"Nunito Sans", size: "16"} }}
+                  font: {family:"Nunito Sans", size: "16"}, 
+                  yaxis: {ticksuffix: "  "} }}
         responsive = {true}
         useResizeHandler = {true}
         style = {{width: "100%",

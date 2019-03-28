@@ -23,18 +23,18 @@ class CollabCareerMP extends Component {
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
               <CardHeader style={{ textAlign: 'center' }}>Career Marketplace accounts for</CardHeader>
               <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>25%</CardText>
-              <CardFooter style={{ textAlign: 'center' }}>of pageviews on GCcollab</CardFooter>
+              <CardFooter style={{ textAlign: 'center' }}>of pageviews</CardFooter>
             </Card>
             <br />
 
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
-              <CardHeader style={{ textAlign: 'center' }}>Number of users in the Career Marketplace group on GCcollab</CardHeader>
+              <CardHeader style={{ textAlign: 'center' }}>Number of users in the Career Marketplace group</CardHeader>
               <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>20 000</CardText>
             </Card>
             <br />
 
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
-              <CardHeader style={{ textAlign: 'center' }}>Offering vs Seeking Opportunities GCcollab</CardHeader>
+              <CardHeader style={{ textAlign: 'center' }}>Offering vs Seeking Opportunities</CardHeader>
               <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>1000 vs 500</CardText>
             </Card>
             <br />
@@ -44,7 +44,7 @@ class CollabCareerMP extends Component {
             <Card style = {{height: "490px"}}>
               <CardBody> 
                 <h2>Number of Users who have Opted Into each Oppurtunity Type</h2>
-                <Plot title="Number of Users who have Opted Into each Oppurtunity Type" 
+                <Plot title="Number of Users who have Opted Into each Oppurtunity Type" //need to keep title hear as title of csv
                           x={[3619,
                             5343,
                             3988,
@@ -87,7 +87,7 @@ class CollabCareerMP extends Component {
             <Card style = {{height: "640px"}}>
               <CardBody>
                 <h2>Opportunities by Opportunity Status</h2>
-                <Plot title="Opportunities by Opportunity Status" 
+                <Plot title="Opportunities by Opportunity Status" //need to keep title hear as title of csv
                       values={[578,
                       9928,
                       83,
@@ -112,7 +112,7 @@ class CollabCareerMP extends Component {
             <Card style = {{height: "640px"}}>
               <CardBody>
                 <h2>Opportunities Posted by Opportunity Type</h2>
-                <Plot title="Opportunities Posted by Opportunity Type" 
+                <Plot title="Opportunities Posted by Opportunity Type" //need to keep title hear as title of csv
                         values={[484,
                         111,
                         53,
@@ -137,7 +137,7 @@ class CollabCareerMP extends Component {
             <Card style = {{height: "640px"}}>
               <CardBody>
                 <h2>Referral Sources</h2>
-                <Plot title="Referral Sources" 
+                <Plot title="Referral Sources" //need to keep title hear as title of csv
                         values={[100,
                         50,
                         43,
