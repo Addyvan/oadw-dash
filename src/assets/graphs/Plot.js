@@ -11,19 +11,15 @@ class Plot extends PlotAbstract {
     }
     csvLink = React.createRef()
 
-    toArray = () => {
-      const names = this.props.y || this.props.labels;
-      const numbers = this.props.x || this.props.values;
-      var csvData = [];
-      for (var i = 0; i < names.length; i++){
-        csvData.push([names[i], numbers[i]])
-      }
-      return csvData
-    }
-
     // Reformat data to .csv and prompt user for download
     downloadCSV = () => {
-      console.log(this.toArray())
+      const names = this.props.y || this.props.labels;
+      const numbers = this.props.x || this.props.values;
+      var csvData = ``;
+      for (var i = 0; i < names.length; i++){
+        csvData = csvData + names[i].toString() + ',' + numbers[i].toString() + "\n"
+      }
+      return csvData
     }
 
     buttonStyle () {
@@ -52,7 +48,7 @@ class Plot extends PlotAbstract {
         <div>
           {this.renderGraph()}
           <div style = {this.buttonStyle()}>
-                <CSVLink data={this.downloadCSV.toString()} filename={this.props.title}><Button style = {{family:"Nunito Sans", size: "16", marginRight: "10px"}} color="secondary" size="sm">Download CSV</Button></CSVLink>
+                <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}><Button style = {{family:"Nunito Sans", size: "16", marginRight: "10px"}} color="secondary" size="sm">Download CSV</Button></CSVLink>
                 <Button onClick={this.toggleGraph} color="secondary" size="sm" style = {{family:"Nunito Sans", size: "16"}}>View as Table</Button>
           </div>
         </div>
