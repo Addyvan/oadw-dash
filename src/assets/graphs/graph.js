@@ -11,14 +11,17 @@ class Graph extends React.Component {
           x: this.props.x, 
           y: this.props.y,
           orientation: this.props.orientation,
-          color: ''}
+          marker: {color: '#175573'} }
       ]
     }
+    //colors: ['#002D42', '#0D467D', '#137991', '#6DD2DA', '#15A3A6', '#92CC6F']
+    //colors: ['#002D42', '#175573', '#4285A6', '#82BDD9', '#CCEFFF', '#F3F8FA']
     else {
       return [
         {values: this.props.values,
         labels: this.props.labels,
-        type: "pie"},
+        type: "pie",
+        marker: {colors: ['#002D42', '#175573', '#4285A6', '#82BDD9', '#CCEFFF', '#F3F8FA']} },
       ]
     }
   }
@@ -29,11 +32,13 @@ class Graph extends React.Component {
         data={this.createData()}
         layout={ {width: 2.5, 
                   autosize: true,
-                  title: this.props.title,
+                  title: {text: this.props.title,
+                          font: {family:"Rubik", size: "28"} },
                   margin: {l: this.props.leftMargin,
                           b: 20,
                           r: 0,
-                          t: this.props.topMargin}} }
+                          t: this.props.topMargin},
+                  font: {family:"Nunito Sans", size: "16"} }}
         responsive = {true}
         useResizeHandler = {true}
         style = {{width: "100%",

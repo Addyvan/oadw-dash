@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Graph from './../assets/graphs/graph.js';
-import PieChart from './../assets/graphs/PieChart.js';
 import Plot from './../assets/graphs/Plot.js';
-import { Card, Button, CardTitle, CardText, CardHeader, CardFooter, Container, Row, Col, CardBody} from 'reactstrap';
+import { Card, CardText, CardHeader, CardFooter, Container, Row, Col, CardBody} from 'reactstrap';
 import "../styles/custom.scss";
 
 class CollabCareerMP extends Component {
@@ -22,22 +20,22 @@ class CollabCareerMP extends Component {
       <Container fluid id = 'container' style={{marginRight: '10px', marginLeft: '10px', marginTop: '10px'}}>
         <Row id = 'row'>
           <Col sm={3} md = {3} lg = {3}> 
-            <Card inverse style={{ backgroundColor: '#694B82', borderColor: '#694B82' }}>
+            <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
               <CardHeader style={{ textAlign: 'center' }}>Career Marketplace accounts for</CardHeader>
-              <CardText style={{ fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>25%</CardText>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>25%</CardText>
               <CardFooter style={{ textAlign: 'center' }}>of pageviews on GCcollab</CardFooter>
             </Card>
             <br />
 
-            <Card inverse style={{ backgroundColor: '#694B82', borderColor: '#694B82' }}>
+            <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
               <CardHeader style={{ textAlign: 'center' }}>Number of users in the Career Marketplace group on GCcollab</CardHeader>
-              <CardText style={{ fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>20 000</CardText>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>20 000</CardText>
             </Card>
             <br />
 
-            <Card inverse style={{ backgroundColor: '#694B82', borderColor: '#694B82' }}>
+            <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
               <CardHeader style={{ textAlign: 'center' }}>Offering vs Seeking Opportunities GCcollab</CardHeader>
-              <CardText style={{ fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>1000 vs 500</CardText>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>1000 vs 500</CardText>
             </Card>
             <br />
 
@@ -72,7 +70,7 @@ class CollabCareerMP extends Component {
                           "Student Integration Opportunity Creator"]}
                           type="bar"
                           orientation="h"
-                          leftMargin = "275"
+                          leftMargin = "300"
                           buttonPosition = "topRight"
                           height= "100%"
                           topMargin = "50"
@@ -136,12 +134,12 @@ class CollabCareerMP extends Component {
             <Card style = {{height: "620px"}}>
               <CardBody>
                 <Plot title="Referral Sources" 
-                        values={[484,
-                        111,
-                        53,
-                        38,
-                        42,
-                        279]}
+                        values={[100,
+                        50,
+                        43,
+                        40,
+                        30,
+                        20]}
                         labels={["account.gccollab.ca", 
                         "gcconnex.gc.ca", 
                         "notification", 

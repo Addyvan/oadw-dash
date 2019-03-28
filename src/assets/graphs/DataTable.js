@@ -2,50 +2,27 @@ import React from 'react';
 import { Table } from "reactstrap";
 
 class DataTable extends React.Component {
+    render() {
+        const firstColumn = this.props.y || this.props.labels;
+        const secondColumn = this.props.x || this.props.values;
 
-    createDataTable () {
-        if (this.props.x !== undefined){
-            return (
+        return (
+            <div>
+                <h2>{this.props.title}</h2>
                 <Table hover striped size = "sm">
                     <tbody>
-                        {this.props.x.map((value,index) => {
-                            const y = this.props.y[index];
-                            return(
-                                <tr>
-                                    <th style = {{width: "60%"}} scope="column">{y}</th>
-                                    <td style = {{width: "40%"}} >{value}</td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </Table>
-            );
-        }
-        else {
-            return (
-                <Table hover striped>
-                    <tbody>
-                            {this.props.values.map((value,index) => {
-                                const labels = this.props.labels[index];
+                            {secondColumn.map((value,index) => {
+                                const first = firstColumn[index];
                                 return(
                                     <tr>
-                                        <th style = {{width: "60%"}} scope="column">{labels}</th>
+                                        <th style = {{width: "60%"}} scope="column">{first}</th>
                                         <td style = {{width: "40%"}} >{value}</td>
                                     </tr>
                                 );
                             })}
                     </tbody>
                 </Table>
-            );
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <p>{this.props.title}</p>
-                {this.createDataTable()}
-          </div>
+            </div>
         );
       }
 }
