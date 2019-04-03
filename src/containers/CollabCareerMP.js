@@ -21,27 +21,32 @@ class CollabCareerMP extends Component {
         <Row id = 'row'>
           <Col sm={3} md = {3} lg = {3}> 
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
-              <CardHeader style={{ textAlign: 'center' }}>Career Marketplace accounts for</CardHeader>
-              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>25%</CardText>
-              <CardFooter style={{ textAlign: 'center' }}>of pageviews</CardFooter>
+              <CardHeader style={{ textAlign: 'left' }}>Percentage of total GCconnex Pageviews</CardHeader>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>
+                <div style = {{display: "inline-block", width: "66.66%", textAlign: "center", float: "left"}}>25%</div><i style={{float: 'right', display: "inline-block", width: "30%", textAlign: "center"}} class="fas fa-arrow-up fa-2x"></i>
+              </CardText>
             </Card>
             <br />
 
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
-              <CardHeader style={{ textAlign: 'center' }}>Number of users in the Career Marketplace group</CardHeader>
-              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>20 000</CardText>
+              <CardHeader style={{ textAlign: 'left' }}>Number of users in the Career Marketplace group</CardHeader>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>
+                <div style = {{display: "inline-block", width: "66.66%", textAlign: "center", float: "left"}}>20 000</div><i style={{float: 'right', display: "inline-block", width: "30%", textAlign: "center"}} class="fas fa-users fa-2x"></i>
+              </CardText>
             </Card>
             <br />
 
             <Card inverse style={{ backgroundColor: '#002D42', borderColor: '#002D42', fontFamily: 'Rubik', fontSize: "18"}}>
-              <CardHeader style={{ textAlign: 'center' }}>Offering vs Seeking Opportunities</CardHeader>
-              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>1000 vs 500</CardText>
+              <CardHeader style={{ textAlign: 'left' }}>Offering vs Seeking Opportunities</CardHeader>
+              <CardText style={{ fontFamily: 'Rubik', fontSize: '40px', textAlign: 'center', marginTop: '10px', marginBottom: '10px' }}>
+                <div style = {{display: "inline-block", width: "66.66%", textAlign: "center", float: "left"}}>1000 vs 500</div><i style={{float: 'right', display: "inline-block", width: "30%", textAlign: "center"}} class="fas fa-eye fa-2x"></i>
+              </CardText>
             </Card>
             <br />
 
           </Col>
           <Col xs = {9} sm={9} md = {9} lg = {9}>
-            <Card style = {{height: "490px"}}>
+            <Card style = {{height: "500px"}}>
               <CardBody> 
                 <h2>Number of Users who have Opted Into each Oppurtunity Type</h2>
                 <Plot title="Number of Users who have Opted Into each Oppurtunity Type" //need to keep title hear as title of csv
@@ -84,7 +89,7 @@ class CollabCareerMP extends Component {
 
         <Row>
         <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "625px"}}>
               <CardBody>
                 <h2>Opportunities by Opportunity Status</h2>
                 <Plot title="Opportunities by Opportunity Status" //need to keep title hear as title of csv
@@ -109,7 +114,7 @@ class CollabCareerMP extends Component {
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "625px"}}>
               <CardBody>
                 <h2>Opportunities Posted by Opportunity Type</h2>
                 <Plot title="Opportunities Posted by Opportunity Type" //need to keep title hear as title of csv
@@ -134,7 +139,7 @@ class CollabCareerMP extends Component {
             </Card>
           </Col>
           <Col xs = {4} sm={4} md = {4} lg = {4}>
-            <Card style = {{height: "640px"}}>
+            <Card style = {{height: "625px"}}>
               <CardBody>
                 <h2>Referral Sources</h2>
                 <Plot title="Referral Sources" //need to keep title hear as title of csv

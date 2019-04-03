@@ -25,7 +25,7 @@ const DefaultLayout = ({ children, noNavbar, noFooter }) => (
         md="9"
         sm="12"
         className="flex-grow-1 content"
-        style = {{backgroundColor: "#F4F4F4", height: "auto"}}
+        style = {{backgroundColor: "#F4F4F4", height: "auto"}} //other option #E6FEFF
       >
         {children}
         {!noFooter && <Footer />}
