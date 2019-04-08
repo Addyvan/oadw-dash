@@ -3,6 +3,9 @@ import Plot from './../assets/graphs/Plot.js';
 import { Card, CardText, CardHeader, CardFooter, Container, Row, Col, CardBody} from 'reactstrap';
 import "../styles/custom.scss";
 
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
+
 class CollabCareerMP extends Component {
   constructor(props) {
     super(props);

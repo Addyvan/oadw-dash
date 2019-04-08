@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavItem, NavLink } from "reactstrap";
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
 
 class SidebarNavItem extends React.Component {
 

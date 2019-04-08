@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Graph from './../assets/graphs/graph.js';
 import { Card, Button, CardTitle, CardText, CardHeader, CardFooter, Container, Row, Col, CardBody} from 'reactstrap';
 import "../styles/custom.scss";
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
 
 class ConnexCareerMP extends Component {
   componentDidMount() {

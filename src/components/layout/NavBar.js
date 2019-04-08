@@ -4,6 +4,8 @@ import { Row, Col } from "reactstrap";
 import { I18n } from "react-i18next";
 
 import LanguageToggle from "../design-system/LanguageToggle";
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
 
 class NavBar extends React.Component {
   render() {

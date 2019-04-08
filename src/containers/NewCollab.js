@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
 
 class NewCollab extends Component {
   componentDidMount() {
