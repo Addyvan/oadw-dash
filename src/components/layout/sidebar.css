@@ -1,0 +1,38 @@
+#slantedCol {
+  position: relative;
+  display: inline-block;
+  padding: 1em 5em 1em 1em;
+  color: #fff;
+  width: 25% !important;
+  max-width: 0% !important;
+  z-index: 50;
+}
+
+#slantedCol:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  transform: skew(-45deg);
+  width: 300px !important;
+  z-index: 50;
+}
+
+#gradient {
+    z-index: -1 !important;
+    position: relative;
+    background-image: linear-gradient(to right, #137991, #15A3A6);
+}
+
+#flag {
+    position: relative;
+    z-index: 100;
+}
