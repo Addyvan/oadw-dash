@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 1em 5em 1em 1em;
   color: #fff;
-  width: 25% !important;
+  width: 30% !important;
   max-width: 0% !important;
   z-index: 50;
 }
@@ -22,7 +22,7 @@
   -webkit-transform: skew(-45deg);
   -ms-transform: skew(-45deg);
   transform: skew(-45deg);
-  width: 300px !important;
+  width: 390px !important;
   z-index: 50;
 }
 
@@ -35,4 +35,12 @@
 #flag {
     position: relative;
     z-index: 100;
+    vertical-align: middle;
+}
+
+#flag.resize {
+    width: 200px;
+    height: 75px;
+    max-width: 200px;
+    max-height: 75px
 }

@@ -16,8 +16,8 @@ class NavBar extends React.Component {
       <I18n ns={["translation"]}>
         {
           (t, { i18n }) => (
-            <Row style = {{height: "60px", marginBottom: "0px", overflow: "hidden"}}>
-              <Col id = "slantedCol"><img id = "flag" src={FlagEN} alt="Government of Canada" /></Col>
+            <Row style = {{height: "75px", marginBottom: "0px", overflow: "hidden"}}>
+              <Col id = "slantedCol"><img id = "flag" style = {{height: "28px", marginTop: "4px"}} src={FlagEN} alt="Government of Canada" /></Col>
               <Col id = "gradient" style = {{width: "85%", backgroundColor: "blue", zIndex: "-1"}}></Col>
             </Row>
           )
