@@ -119,7 +119,7 @@ class SideBar extends React.Component {
               <DropdownItem divider></DropdownItem>
               <DropdownItem style = {{family:"Nunito Sans", size: "16"}} header>Applications</DropdownItem>
               <SidebarNavItem style = {{family:"Nunito Sans", size: "16", color: "#707070"}} logo_path={GCcollab} text="GCcollab" path="/newcollab" />
-              <SidebarNavItem logo_path={GCconnex} text="GCconnex" />
+              <SidebarNavItem logo_path={GCconnex} text="GCconnex"/>
               <SidebarNavItem logo_path={GCtools} text="Career Marketplace" path="/collab-careermp" />
               <SidebarNavItem style = {{color: "#707070"}} logo_path={GCmessage} text="GCmessage" />
               <SidebarNavItem color= "secondary" logo_path={GCpedia} text="GCpedia"/>
