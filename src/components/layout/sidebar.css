@@ -1,3 +1,7 @@
+.nav-link.active {
+    color: #707070 !important;
+}
+
 #slantedCol {
   position: relative;
   display: inline-block;
@@ -43,4 +47,26 @@
     height: 75px;
     max-width: 200px;
     max-height: 75px
+}
+
+/* DatePickerInput * {
+    padding-right: 0px !important;
+} */
+
+.react-datepicker-component .react-datepicker-input input {
+    padding-right: 0px !important;
+    border: .1px solid #CECECE !important;
+}
+.react-datepicker-component .react-datepicker-input {
+    min-width: 140px !important;
+}
+
+.react-datepicker-component .react-datepicker-input.has-value input {
+    color: #707070 !important;
+    background-color: #FFFFFF;
+}
+.sidebar-navlink.active{
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+    color: #707070;
 }
