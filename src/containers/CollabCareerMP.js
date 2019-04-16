@@ -83,6 +83,7 @@ class CollabCareerMP extends Component {
                           buttonPosition = "topRight"
                           height= "400px"
                           topMargin = "0"
+                          width = "100%"
                           >
                     </Plot>
               </CardBody>
@@ -94,7 +95,7 @@ class CollabCareerMP extends Component {
         <Col xs = {4} sm={4} md = {4} lg = {4}>
             <Card style = {{height: "625px"}}>
               <CardBody>
-                <h2>Opportunities by Opportunity Status</h2>
+                <h2>Opportunities by Status</h2>
                 <Plot title="Opportunities by Opportunity Status" //need to keep title hear as title of csv
                       values={[578,
                       9928,
@@ -111,7 +112,8 @@ class CollabCareerMP extends Component {
                       type="pie"
                       buttonPosition="bottomRight"
                       height= "550px"
-                      topMargin = "0">
+                      topMargin = "0"
+                      width = "100%">
                 </Plot>
               </CardBody>
             </Card>
@@ -119,8 +121,8 @@ class CollabCareerMP extends Component {
           <Col xs = {4} sm={4} md = {4} lg = {4}>
             <Card style = {{height: "625px"}}>
               <CardBody>
-                <h2>Opportunities Posted by Opportunity Type</h2>
-                <Plot title="Opportunities Posted by Opportunity Type" //need to keep title hear as title of csv
+                <h2>Opportunities by Type</h2>
+                <Plot title="Opportunities by Opportunity Type" //need to keep title hear as title of csv
                         values={[484,
                         111,
                         53,
@@ -136,7 +138,8 @@ class CollabCareerMP extends Component {
                         type="pie"
                         buttonPosition="bottomRight"
                         height= "550px"
-                        topMargin = "0">                        >
+                        topMargin = "0"
+                        width = "100%">                        >
                   </Plot>
               </CardBody>
             </Card>
@@ -161,7 +164,8 @@ class CollabCareerMP extends Component {
                         type="pie"
                         buttonPosition="bottomRight"
                         height= "550px"
-                        topMargin = "0">                        >
+                        topMargin = "0"
+                        width = "100%">                        >
                 </Plot>
               </CardBody>
             </Card>

@@ -10,6 +10,7 @@ class Graph extends React.Component {
         {type: this.props.type, 
           x: this.props.x, 
           y: this.props.y,
+          fill: this.props.fill,
           orientation: this.props.orientation,
           marker: {color: '#175573'} }
       ]
@@ -41,7 +42,7 @@ class Graph extends React.Component {
                   yaxis: {ticksuffix: "  "} }}
         responsive = {true}
         useResizeHandler = {true}
-        style = {{width: "100%",
+        style = {{width: this.props.width,
                   height: this.props.height,
                   display: "block"}}
         config= {{ displayModeBar: false }}

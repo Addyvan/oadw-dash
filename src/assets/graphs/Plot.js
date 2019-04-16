@@ -47,8 +47,8 @@ class Plot extends PlotAbstract {
         <div>
           {this.renderGraph()}
           <div style = {this.buttonStyle()}>
-                <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}><Button style = {{family:"Nunito Sans", size: "16", marginRight: "10px"}} color="secondary" >Download CSV</Button></CSVLink>
-                <Button onClick={this.toggleGraph} color="secondary" style = {{family:"Nunito Sans", size: "16"}}>View as Table</Button>
+                <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}><i class="fas fa-download fa-2x" style = {{size: "16", marginRight: "10px", color: "#959595"}} ></i></CSVLink>
+                <i class="fas fa-table fa-2x" onClick={this.toggleGraph} style = {{color: "#959595"}}></i>
           </div>
         </div>
       );
