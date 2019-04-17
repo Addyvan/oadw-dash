@@ -9,6 +9,9 @@ import CollabTotalCards from "../components/collab/TotalCards";
 import CollabUsersTimeSeriesProvider from "../gql/collab/providers/UsersTimeSeries";
 import CollabUsersTimeSeries from "../components/collab/UsersTimeSeries";
 
+import CollabUserTypesProvider from "../gql/collab/providers/UserType";
+import CollabUserType from "../components/collab/CollabUserType";
+
 import InnerNavBar from "../components/collab/InnerNavBar"; 
 import {Container, Row, Col, Card, CardBody} from 'reactstrap';
 import Community from "../assets/logos/community-people.png";
@@ -47,7 +50,10 @@ class NewCollab extends Component {
           <Col>
             <Card style = {{width: "997.26px", height: "550px", maxWidth: "997.26px", marginTop: "17.01px", marginBottom: "20px"}}>
               <CardBody>
-
+                <h2 style = {{fontFamily: "Nunito Sans", fontSize: "21px", color: "#959595"}}>User Types</h2>
+                <CollabUserTypesProvider amount={44077}>
+                  <CollabUserType />
+                </CollabUserTypesProvider>
               </CardBody>
             </Card>
           </Col>

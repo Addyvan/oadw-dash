@@ -4,21 +4,21 @@ import {Query} from "react-apollo";
 import { Spinner } from "reactstrap";
 
 import {
-  USERS_TIMESERIES
-} from "../USERS_TIMESERIES";
+  USER_TYPE
+} from "../USER_TYPE";
 
-class CollabUsersTimeSeriesProvider extends React.Component {
+class CollabUserTypesProvider extends React.Component {
     render() {
       const { children } = this.props;
       return(
-        <Query query={USERS_TIMESERIES}  variables={{amount: (this.props.amount) ? this.props.amount : 10}}>
+        <Query query={USER_TYPE} variables={{amount: (this.props.amount) ? this.props.amount : 10}}>
           {
             ({ loading, error, data }) => {
               if (loading) return (<Spinner color="info" />);
               if (error) { console.log(error); return; }
 
               if (data) {
-
+                console.log(this.props);
                 if (data) {
                   const childrenWithProps = React.Children.map(children, child =>
                     React.cloneElement(child, { data: data })
@@ -36,4 +36,4 @@ class CollabUsersTimeSeriesProvider extends React.Component {
     }
 }
 
-export default CollabUsersTimeSeriesProvider;
+export default CollabUserTypesProvider;

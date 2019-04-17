@@ -1,13 +1,13 @@
 import gql from "graphql-tag";
 
-const USERS_TIMESERIES = gql`
-  query GetTotals($amount: Int) {
+const USER_TYPE = gql`
+  query UserType($amount: Int) {
     users(first: $amount, where: {platform: GCCOLLAB}) {
-      createdAtElgg
+      userType
     }
   }
 `;
 
 export {
-  USERS_TIMESERIES
+  USER_TYPE
 };

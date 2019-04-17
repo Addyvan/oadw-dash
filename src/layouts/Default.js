@@ -16,7 +16,7 @@ const DefaultLayout = ({ children, noNavbar, noFooter }) => (
         md="3"
         sm="12"
         style={{padding: "0px"}}
-        className="flex-grow-1"
+        className="flex-grow-1" // fixed-top classname
       >
         <Sidebar />
       </Col>

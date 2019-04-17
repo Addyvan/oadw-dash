@@ -31,12 +31,13 @@ class Graph extends React.Component {
   render() {
     var layout = { 
       autosize: true,
-      margin: {l: 50,
-              b: 40,
+      margin: {l: (this.props.orientation === "h") ? 150 : 50,
+              b: 60,
               r: 0,
               t: 0},
       font: {family:"Nunito Sans", size: "16"}, 
-      yaxis: {ticksuffix: "  "} 
+      yaxis: {ticksuffix: "  "
+    } 
     };
     return (
       <Plot
