@@ -14,7 +14,7 @@ class CollabTotalsProvider extends React.Component {
         <Query query={TOTALS}>
           {
             ({ loading, error, data }) => {
-              if (loading) return (<Spinner color="primary" />);
+              if (loading) return (<Spinner color="info" />);
               if (error) { console.log(error); return; }
 
               if (data) {

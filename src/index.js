@@ -11,7 +11,15 @@ import ApolloClient from "apollo-boost";
 
 const client = new ApolloClient({
   uri: 'https://data.api.gccollab.ca/graphql',
-  addTypename: false
+  request: async operation => {
+    const token = await localStorage.getItem('token');
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : '',
+        password: "swag"
+      }
+    });
+   }
 });
 
 ReactDOM.render(

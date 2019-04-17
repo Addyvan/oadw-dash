@@ -16,7 +16,7 @@ class CollabUsersTimeSeriesProvider extends React.Component {
         <Query query={USERS_TIMESERIES}  variables={{amount: (this.props.amount) ? this.props.amount : 10}}>
           {
             ({ loading, error, data }) => {
-              if (loading) return (<Spinner color="primary" />);
+              if (loading) return (<Spinner color="info" />);
               if (error) { console.log(error); return; }
 
               if (data) {
