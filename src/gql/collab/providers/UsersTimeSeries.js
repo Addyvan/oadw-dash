@@ -10,11 +10,12 @@ import {
 class CollabUsersTimeSeriesProvider extends React.Component {
     render() {
       const { children } = this.props;
+      console.log("HERE");
+      console.log(this.props);
       return(
-        <Query query={USERS_TIMESERIES}>
+        <Query query={USERS_TIMESERIES}  variables={{amount: (this.props.amount) ? this.props.amount : 10}}>
           {
             ({ loading, error, data }) => {
-              console.log("icit");
               if (loading) return (<Spinner color="primary" />);
               if (error) { console.log(error); return; }
 

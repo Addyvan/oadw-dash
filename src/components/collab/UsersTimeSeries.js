@@ -1,24 +1,24 @@
 import React from "react";
-import UsersTimeSeriesPlot from "./UsersTimeSeriesPlot";
+import Plot from "../../assets/graphs/Plot.js";
 
 class CollabUsersTimeSeries extends React.Component {
   render() {
     console.log(this.props);
 
     var dates = [];
-    var numColleagues = [];
+    var numUsers = [];
+    var i = 1;
+
+
     this.props.data.users.map((user) => {
       dates.push(user["createdAtElgg"]);
-      if (user["stats"])
-        numColleagues.push(user["stats"]["numColleagues"]);
-      else {
-        numColleagues.push(15);
-      }
+      numUsers.push(i);
+      i++;
     });
 
     return(
       <div>
-        <UsersTimeSeriesPlot x={dates} y={numColleagues} title="Example Plot" />
+        <Plot x={dates} y={numUsers} title="Total Users" />
       </div>
     );
   }

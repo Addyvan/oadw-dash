@@ -1,12 +1,9 @@
 import gql from "graphql-tag";
 
 const USERS_TIMESERIES = gql`
-  query GetTotals {
-    users(last: 1000) {
+  query GetTotals($amount: Int) {
+    users(first: $amount) {
       createdAtElgg
-      stats {
-        numColleagues
-      }
     }
   }
 `;

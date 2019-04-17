@@ -16,7 +16,7 @@ class Plot extends PlotAbstract {
       const numbers = this.props.x || this.props.values;
       var csvData = ``;
       for (var i = 0; i < names.length; i++){
-        csvData = csvData + names[i].toString() + ',' + numbers[i].toString() + "\n"
+        csvData = csvData + names[i].toString() + ',' + numbers[i].toString() + "\n";
       }
       return csvData
     }
@@ -47,8 +47,10 @@ class Plot extends PlotAbstract {
         <div>
           {this.renderGraph()}
           <div style = {this.buttonStyle()}>
-                <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}><i class="fas fa-download fa-2x" style = {{size: "16", marginRight: "10px", color: "#959595"}} ></i></CSVLink>
-                <i class="fas fa-table fa-2x" onClick={this.toggleGraph} style = {{color: "#959595"}}></i>
+            <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}>
+              <i class="fas fa-download fa-2x" style = {{size: "16", marginRight: "10px", color: "#959595"}} />
+            </CSVLink>
+            <i class="fas fa-table fa-2x" onClick={this.toggleGraph} style = {{color: "#959595"}} />
           </div>
         </div>
       );

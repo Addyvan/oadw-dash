@@ -3,6 +3,7 @@ import Plot from 'react-plotly.js';
 import sizeMe  from "react-sizeme";
 import PropTypes from "prop-types";
 
+/** THIS ISNT BEING USED IGNORE */
 class UsersTimeSeriesPlot extends React.Component {
   render() {
     return(
