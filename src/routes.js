@@ -6,7 +6,7 @@ import DefaultLayout from "./layouts/Default";
 
 // Route Views
 import Overview from "./containers/Overview";
-import NewCollab from "./containers/NewCollab";
+import NewCollab from "./containers/Collab";
 import CollabCareerMP from "./containers/CollabCareerMP";
 import ConnexCareerMP from "./containers/ConnexCareerMP";
 

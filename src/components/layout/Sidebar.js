@@ -57,7 +57,7 @@ class SideBar extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col md="12" sm="12" lg="12">
             <Nav style={{marginTop: "15px", display: "block"}} vertical>
               <DropdownItem divider></DropdownItem>
             </Nav>
