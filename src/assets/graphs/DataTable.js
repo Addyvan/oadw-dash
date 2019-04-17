@@ -3,8 +3,13 @@ import { Table, Row, Col } from "reactstrap";
 
 class DataTable extends React.Component {
     render() {
-        const firstColumn = this.props.y || this.props.labels;
-        const secondColumn = this.props.x || this.props.values;
+        var firstColumn = this.props.y || this.props.labels;
+        var secondColumn = this.props.x || this.props.values;
+
+        if (firstColumn.length > 300) {
+          firstColumn = firstColumn.slice(firstColumn.length - 301, firstColumn.length -1);
+          secondColumn = secondColumn.slice(secondColumn.length - 301, secondColumn.length -1);
+        } 
 
         return (
             <Row>
