@@ -14,12 +14,11 @@ class CollabTotalsProvider extends React.Component {
         <Query query={TOTALS}>
           {
             ({ loading, error, data }) => {
-              console.log("icit");
               if (loading) return (<Spinner color="primary" />);
               if (error) { console.log(error); return; }
 
               if (data) {
-
+                console.log(this.props);
                 if (data) {
                   const childrenWithProps = React.Children.map(children, child =>
                     React.cloneElement(child, { data: data })

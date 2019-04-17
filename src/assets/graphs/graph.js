@@ -1,5 +1,6 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
+import sizeMe  from "react-sizeme";
 
 class Graph extends React.Component {
 
@@ -32,16 +33,21 @@ class Graph extends React.Component {
     return (
       <Plot
         data={this.createData()}
-        layout={ {width: 2.5, 
+        layout={ { 
                   autosize: true,
-                  margin: {l: this.props.leftMargin,
-                          b: 20,
+                  xaxis: {
+                    autorange: true,
+                    range: [this.props.x[0], this.props.x[this.props.x.length-1]],
+                    type: 'date'
+                  },
+                  margin: {l: 50,
+                          b: 40,
                           r: 0,
-                          t: this.props.topMargin},
+                          t: 0},
                   font: {family:"Nunito Sans", size: "16"}, 
                   yaxis: {ticksuffix: "  "} }}
-        responsive = {true}
-        useResizeHandler = {true}
+        //responsive = {true}
+        //useResizeHandler = {true}
         style = {{width: this.props.width,
                   height: this.props.height,
                   display: "block"}}
@@ -52,4 +58,4 @@ class Graph extends React.Component {
 }
 
 
-export default Graph;
+export default sizeMe()(Graph);
