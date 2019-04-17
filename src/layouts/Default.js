@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "reactstrap";
 
-
+import "./layout.css";
 import NavBar from "../components/layout/NavBar";
 import Sidebar from "../components/layout/Sidebar";
 import Footer from "../components/layout/Footer";
@@ -10,7 +10,7 @@ import Footer from "../components/layout/Footer";
 const DefaultLayout = ({ children, noNavbar, noFooter }) => (
   <Container id="main" className="flex-grow-1" fluid>
       {!noNavbar && <NavBar />}
-    <Row style={{height: "100%", overflowX: "hidden"}}>
+    <Row style={{height: "100%", overflowX: "hidden", overflowY: "hidden"}}>
       <Col
         lg="2"
         md="3"
@@ -18,14 +18,16 @@ const DefaultLayout = ({ children, noNavbar, noFooter }) => (
         style={{padding: "0px"}}
         className="flex-grow-1" // fixed-top classname
       >
-        <Sidebar />
+        
+        <Sidebar  />
+        
       </Col>
       <Col
         lg="10"
         md="9"
         sm="12"
-        className="flex-grow-1 content"
-        style = {{backgroundColor: "#F4F4F4", height: "auto"}} //other option #E6FEFF
+        className="flex-grow-1 content right"
+        style = {{backgroundColor: "#F4F4F4", height: "100%"}} //other option #E6FEFF
       >
         {children}
         {!noFooter && <Footer />}
