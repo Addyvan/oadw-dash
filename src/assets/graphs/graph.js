@@ -29,23 +29,19 @@ class Graph extends React.Component {
   }
 
   render() {
-    console.log(this.props.height)
+    var layout = { 
+      autosize: true,
+      margin: {l: 50,
+              b: 40,
+              r: 0,
+              t: 0},
+      font: {family:"Nunito Sans", size: "16"}, 
+      yaxis: {ticksuffix: "  "} 
+    };
     return (
       <Plot
         data={this.createData()}
-        layout={ { 
-                  autosize: true,
-                  xaxis: {
-                    autorange: true,
-                    range: [this.props.x[0], this.props.x[this.props.x.length-1]],
-                    type: 'date'
-                  },
-                  margin: {l: 50,
-                          b: 40,
-                          r: 0,
-                          t: 0},
-                  font: {family:"Nunito Sans", size: "16"}, 
-                  yaxis: {ticksuffix: "  "} }}
+        layout={layout }
         //responsive = {true}
         //useResizeHandler = {true}
         style = {{width: this.props.width,
