@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import '@gctools-components/aurora-css/css/aurora.min.css';import '@gctools-components/aurora-ds/css/aurora.min.css';
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
+import "./NewCollab.css";
 
 
 import InnerNavBar from "../components/layout/InnerNavBar.js"; 
@@ -33,42 +35,44 @@ class NewCollab extends Component {
               <CardBody>
                 <h2 style = {{fontFamily: "Nunito Sans", fontSize: "21px", color: "#959595"}}>Total Users Over Time</h2>
                 <Plot title="Number of Users who have Opted Into each Oppurtunity Type" //need to keep title hear as title of csv
-                      x={[3619,
-                        5343,
-                        3988,
-                        5266,
-                        1962,
-                        2881,
-                        5591,
-                        4183,
-                        2050,
-                        2841,
-                        3327,
-                        4272]}
-                      y={["Casual Work Seeker", 
-                      "Casual Work Opportunity Creator", 
-                      "Collaboration Seeker", 
-                      "Collaboration Opportunity Creator", 
-                      "Interchange Canada Seeker", 
-                      "Interchange Canada Opportunity Creator",
-                      "Mentee",
-                      "Mentor",
-                      "Skill Sharing Seeker",
-                      "Skill Sharing Opportunity Creator",
-                      "Student Integration Seeker",
-                      "Student Integration Opportunity Creator"]}
+                      x={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"]}
+                      y={[10000, 100030, 100100, 100300, 100700, 100800, 103000, 103400, 104500, 105000, 106000, 107000]}
                       type="scatter"
                       fill="tozeroy"
                       orientation="h"
-                      leftMargin = "300"
+                      leftMargin = ""
                       buttonPosition = "topRight"
-                      height= "262.93px"
-                      topMargin = "0"
+                      height= "400px"
+                      topMargin = "0px"
                       width= "100%"
                       >
                   </Plot>
               </CardBody>
             </Card>
+            {/* <Card style = {{height: "625px"}}>
+              <CardBody>
+                <h2>Referral Sources</h2>
+                <Plot title="Referral Sources" //need to keep title hear as title of csv
+                        values={[100,
+                        50,
+                        43,
+                        40,
+                        30,
+                        20]}
+                        labels={["account.gccollab.ca", 
+                        "gcconnex.gc.ca", 
+                        "notification", 
+                        "direct", 
+                        "google", 
+                        "Other"]}
+                        type="pie"
+                        buttonPosition="bottomRight"
+                        height= "550px"
+                        topMargin = "0"
+                        width = "100%">                        >
+                </Plot>
+              </CardBody>
+            </Card> */}
           </Col>
         </Row>
       </Container>
