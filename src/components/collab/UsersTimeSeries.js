@@ -3,7 +3,6 @@ import Plot from "../../assets/graphs/Plot.js";
 
 class CollabUsersTimeSeries extends React.Component {
   render() {
-    console.log(this.props);
 
     var dates = [];
     var numUsers = [];

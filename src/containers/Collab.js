@@ -7,9 +7,9 @@ import CollabTotalCards from "../components/collab/TotalCards";
 import CollabUsersTimeSeriesProvider from "../gql/collab/providers/UsersTimeSeries";
 import CollabUsersTimeSeries from "../components/collab/UsersTimeSeries";
 
-import InnerNavBar from "../components/layout/InnerNavBar.js"; 
+import InnerNavBar from "../components/collab/InnerNavBar"; 
 import {Container, Row, Col, Card, CardBody} from 'reactstrap';
-import Community from "../assets/logos/community-people.png"
+import Community from "../assets/logos/community-people.png";
 
 
 class NewCollab extends Component {
@@ -20,6 +20,13 @@ class NewCollab extends Component {
         <Row>
           <Col>
             <InnerNavBar/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <CollabTotalsProvider>
+              <CollabTotalCards />
+            </CollabTotalsProvider>
           </Col>
         </Row>
         <Row>
