@@ -11,7 +11,7 @@ class CollabUsersTimeSeries extends React.Component {
 
 
     this.props.data.users.map((user) => {
-      dates.push(user["createdAtElgg"]);
+      dates.push(user["createdAtElgg"].split("T")[0]);
       numUsers.push(i);
       i++;
     });
