@@ -16,8 +16,8 @@ class CollabUsersTimeSeries extends React.Component {
     });
 
     return(
-      <div>
-        <Plot x={dates} y={numUsers} title="Total Users" />
+      <div style = {{marginTop: "30px"}}>
+        <Plot x={dates} y={numUsers} title="Total Users" buttonPosition = "topRight"/>
       </div>
     );
   }

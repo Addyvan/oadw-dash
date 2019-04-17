@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import '@gctools-components/aurora-css/css/aurora.min.css';import '@gctools-components/aurora-ds/css/aurora.min.css';
+import '@gctools-components/aurora-css/css/aurora.min.css';
+import '@gctools-components/aurora-ds/css/aurora.min.css';
+import "./NewCollab.css";
 
 import CollabTotalsProvider from "../gql/collab/providers/CollabTotalsProvider";
 import CollabTotalCards from "../components/collab/TotalCards";
@@ -39,6 +41,30 @@ class NewCollab extends Component {
                 </CollabUsersTimeSeriesProvider>
               </CardBody>
             </Card>
+            {/* <Card style = {{height: "625px"}}>
+              <CardBody>
+                <h2>Referral Sources</h2>
+                <Plot title="Referral Sources" //need to keep title hear as title of csv
+                        values={[100,
+                        50,
+                        43,
+                        40,
+                        30,
+                        20]}
+                        labels={["account.gccollab.ca", 
+                        "gcconnex.gc.ca", 
+                        "notification", 
+                        "direct", 
+                        "google", 
+                        "Other"]}
+                        type="pie"
+                        buttonPosition="bottomRight"
+                        height= "550px"
+                        topMargin = "0"
+                        width = "100%">                        >
+                </Plot>
+              </CardBody>
+            </Card> */}
           </Col>
         </Row>
       </Container>

@@ -89,7 +89,7 @@ class SideBar extends React.Component {
                   style = {{width: "30px", display: "inline-block", marginLeft: "5px"}}
               />
               </div>
-              <h6 style = {{display: "inline-block", position: "absolute", left: "215px", top: "118px", color: "#707070"}}>To</h6>
+              <h6 style = {{display: "inline-block", position: "absolute", left: "210px", top: "118px", color: "#707070"}}>To</h6>
               <div className="customDatePickerWidth">
               <DatePickerInput
                   displayFormat='DD/MM/YYYY'
@@ -101,7 +101,7 @@ class SideBar extends React.Component {
                   style={{ width: '200px', float: 'right' }}
                   validationFormat="DD/MM/YYYY"
                   showOnInputClick={true}
-                  style = {{width: "40px", marginLeft: "5px", display: "inline-block", position: "absolute", left: "240px", top: "110px"}}
+                  style = {{width: "40px", marginLeft: "5px", display: "inline-block", position: "absolute", left: "233px", top: "110px"}}
               />
               </div>
             </div>
@@ -110,7 +110,7 @@ class SideBar extends React.Component {
         <Row>
           <Col style = {{marginTop: "16px"}}>
             <Button color="link" style = {{display: "inline-block", color: "#137991", backgroundColor: "#FFFFFF", marginTop: "5px"}}>Reset</Button>
-            <Button style = {{display: "inline-block", color: "#707070", backgroundColor: "#FFFFFF", borderColor: "#CECECE", position: "relative", float: "right", width: "120px"}}>SEARCH</Button>{' '}
+            <Button style = {{display: "inline-block", color: "#707070", backgroundColor: "#FFFFFF", borderColor: "#CECECE", position: "relative", float: "right", width: "120px", marginRight: "4px"}}>SEARCH</Button>{' '}
           </Col>
         </Row>
         <Row>
