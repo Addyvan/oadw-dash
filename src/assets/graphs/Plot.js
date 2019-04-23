@@ -6,8 +6,9 @@ import {CSVLink} from 'react-csv';
 class Plot extends PlotAbstract {
     constructor(props) {
       super(props);
+      console.log(this.props.xAxisTitle)
       this.toggleGraph = this.toggleGraph.bind(this);
-      this.renderGraph = this.renderGraph.bind(this, this.props.x, this.props.y, this.props.type, this.props.orientation, this.props.leftMargin, this.props.title, this.props.bottomMargin, this.props.values, this.props.labels, this.props.height, this.props.topMargin);
+      this.renderGraph = this.renderGraph.bind(this, this.props.x, this.props.y, this.props.type, this.props.orientation, this.props.leftMargin, this.props.title, this.props.bottomMargin, this.props.values, this.props.labels, this.props.height, this.props.topMargin, this.props.xAxisTitle, this.props.yAxisTitle);
     }
 
     // Reformat data to .csv
@@ -48,9 +49,9 @@ class Plot extends PlotAbstract {
           {this.renderGraph()}
           <div style = {this.buttonStyle()}>
             <CSVLink data={this.downloadCSV().toString()} filename={this.props.title.toString() + ".csv"}>
-              <i class="fas fa-download fa-2x" style = {{size: "16", marginRight: "10px", color: "#959595"}} />
+              <i class="fas fa-download fa-2x" alt = "Download CSV" style = {{size: "16", marginRight: "10px", color: "#959595"}} />
             </CSVLink>
-            <i class="fas fa-table fa-2x" onClick={this.toggleGraph} style = {{color: "#959595"}} />
+            <i class="fas fa-table fa-2x" alt = "View as Table" onClick={this.toggleGraph} style = {{color: "#959595"}} />
           </div>
         </div>
       );

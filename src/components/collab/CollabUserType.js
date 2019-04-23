@@ -20,7 +20,7 @@ class CollabUsersTimeSeries extends React.Component {
 
     return(
       <div>
-        <Plot y={bins} x={values} title="User Types" type="bar" orientation="h" />
+        <Plot y={bins} x={values} title="User Types" type="bar" orientation="h" buttonPosition = "topRight" leftMargin = "150" yAxisTitle = "User Type" xAxisTitle = "Number of Users"/>
       </div>
     );
   }

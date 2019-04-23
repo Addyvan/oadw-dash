@@ -49,18 +49,14 @@ class SideBar extends React.Component {
     return(
       <Container>
         <Row>
-          <Col style = {{marginTop: "30px", marginLeft: "25px"}}>
-            <div style={{display: "inline", marginRight: "10px"}}>
-              <i style = {{color: "#137991"}}class="fas fa-chart-bar fa-2x"></i>
-            </div>
+          <Col md="12" sm="12" lg="12" style = {{marginTop: "30px"}}>
+            {/* GCanalytics header and divider */}
+            <i style = {{color: "#137991", display: "inline", marginRight: "10px", marginLeft: "25px"}}class="fas fa-chart-bar fa-2x"></i>
             <h5 style={{display: "inline", fontFamily: 'Nunito Sans', fontWeight: "bold", color: "#4D5D6C"}}>GCanalytics</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="12" sm="12" lg="12">
             <Nav style={{marginTop: "15px", display: "block"}} vertical>
               <DropdownItem divider></DropdownItem>
             </Nav>
+            {/* Filter by drop down  */}
             <div style = {{textAlign: "center", marginTop: "28px"}}>
               <h6 style = {{display: "inline-block", color: "#707070"}}>Filter by</h6>
               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} style = {{display: "inline-block", marginLeft: "5px"}}>
@@ -74,9 +70,10 @@ class SideBar extends React.Component {
                 </DropdownMenu>
               </Dropdown>
             </div>
-            <div style={{ display: "block", float: "left", marginTop: "28px"}}>
-              <h6 style = {{display: "inline-block", marginRight: "5x", color: "#707070"}}>From</h6>
-              <div style = {{display: "inline-block"}}>
+            {/* Date pickers */}
+            <Row style = {{marginTop: "27px"}}>
+              <Col md="12" sm="12" lg="6" style = {{display: "inline-block"}}>
+              <h6 style = {{color: "#707070", display: "inline-block"}}>From</h6>
               <DatePickerInput
                   displayFormat='DD/MM/YYYY'
                   returnFormat='YYYY-MM-DD'
@@ -88,9 +85,9 @@ class SideBar extends React.Component {
                   showOnInputClick={true}
                   style = {{width: "30px", display: "inline-block", marginLeft: "5px"}}
               />
-              </div>
-              <h6 style = {{display: "inline-block", position: "absolute", left: "210px", top: "118px", color: "#707070"}}>To</h6>
-              <div className="customDatePickerWidth">
+              </Col>
+              <Col md="12" sm="12" lg="6" style = {{display: "inline-block"}}>
+              <h6 style = {{color: "#707070", display: "inline-block"}}>To</h6>
               <DatePickerInput
                   displayFormat='DD/MM/YYYY'
                   returnFormat='YYYY-MM-DD'
@@ -101,19 +98,15 @@ class SideBar extends React.Component {
                   style={{ width: '200px', float: 'right' }}
                   validationFormat="DD/MM/YYYY"
                   showOnInputClick={true}
-                  style = {{width: "40px", marginLeft: "5px", display: "inline-block", position: "absolute", left: "233px", top: "110px"}}
+                  style = {{width: "30px", display: "inline-block", marginLeft: "5px"}}
               />
-              </div>
-            </div>
+              </Col>
+            </Row>
           </Col>
-        </Row>
-        <Row>
-          <Col style = {{marginTop: "16px"}}>
-            <Button color="link" style = {{display: "inline-block", color: "#137991", backgroundColor: "#FFFFFF", marginTop: "5px"}}>Reset</Button>
-            <Button style = {{display: "inline-block", color: "#707070", backgroundColor: "#FFFFFF", borderColor: "#CECECE", position: "relative", float: "right", width: "120px", marginRight: "4px"}}>SEARCH</Button>{' '}
+          <Col md="12" sm="12" lg="12" style = {{marginTop: "27px"}}>
+            <Button color="link" style = {{display: "inline-block", color: "#137991", backgroundColor: "#FFFFFF"}}>Reset</Button>
+            <Button style = {{display: "inline-block", color: "#707070", backgroundColor: "#FFFFFF", borderColor: "#CECECE", position: "relative", float: "right", width: "120px"}}>SEARCH</Button>{' '}
           </Col>
-        </Row>
-        <Row>
           <Col>
             <Nav style={{marginTop: "15px", display: "block"}} vertical>
               <DropdownItem divider></DropdownItem>

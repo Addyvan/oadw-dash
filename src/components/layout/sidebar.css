@@ -58,7 +58,7 @@
     border: .1px solid #CECECE !important;
 }
 .react-datepicker-component .react-datepicker-input {
-    min-width: 130px !important;
+    min-width: 110px !important;
 }
 
 .react-datepicker-component .react-datepicker-input.has-value input {

@@ -11,7 +11,7 @@ class Graph extends React.Component {
         {type: this.props.type, 
           x: this.props.x, 
           y: this.props.y,
-          fill: this.props.fill,
+          fill: "tonexty",
           orientation: this.props.orientation,
           marker: {color: '#175573'} }
       ]
@@ -29,15 +29,17 @@ class Graph extends React.Component {
   }
 
   render() {
+    console.log(this.props.xAxisTitle)
     var layout = { 
       autosize: true,
-      margin: {l: (this.props.orientation === "h") ? 150 : 50,
+      margin: {l: this.props.leftMargin,
               b: 60,
               r: 0,
               t: 0},
       font: {family:"Nunito Sans", size: "16"}, 
-      yaxis: {ticksuffix: "  "
-    } 
+      yaxis: {ticksuffix: "  ",
+              title: this.props.yAxisTitle}, 
+      xaxis: {title: this.props.xAxisTitle}
     };
     return (
       <Plot

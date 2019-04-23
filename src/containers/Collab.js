@@ -39,7 +39,7 @@ class NewCollab extends Component {
             <Card style = {{width: "997.26px", height: "550px", maxWidth: "997.26px", marginTop: "17.01px"}}>
               <CardBody>
                 <h2 style = {{fontFamily: "Nunito Sans", fontSize: "21px", color: "#959595"}}>Total Users Over Time</h2>
-                <CollabUsersTimeSeriesProvider amount={500}>
+                <CollabUsersTimeSeriesProvider amount={44000}>
                   <CollabUsersTimeSeries />
                 </CollabUsersTimeSeriesProvider>
               </CardBody>
@@ -51,7 +51,7 @@ class NewCollab extends Component {
             <Card style = {{width: "997.26px", height: "550px", maxWidth: "997.26px", marginTop: "17.01px", marginBottom: "20px"}}>
               <CardBody>
                 <h2 style = {{fontFamily: "Nunito Sans", fontSize: "21px", color: "#959595"}}>User Types</h2>
-                <CollabUserTypesProvider amount={500}>
+                <CollabUserTypesProvider amount={44000}>
                   <CollabUserType />
                 </CollabUserTypesProvider>
               </CardBody>
