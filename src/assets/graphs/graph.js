@@ -29,7 +29,8 @@ class Graph extends React.Component {
   }
 
   render() {
-    console.log(this.props.xAxisTitle)
+    console.log(this.props.yAxisTitle)
+    console.log(this.props.x)
     var layout = { 
       autosize: true,
       margin: {l: this.props.leftMargin,

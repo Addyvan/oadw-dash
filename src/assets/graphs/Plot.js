@@ -6,7 +6,7 @@ import {CSVLink} from 'react-csv';
 class Plot extends PlotAbstract {
     constructor(props) {
       super(props);
-      console.log(this.props.xAxisTitle)
+      console.log(this.props.yAxisTitle)
       this.toggleGraph = this.toggleGraph.bind(this);
       this.renderGraph = this.renderGraph.bind(this, this.props.x, this.props.y, this.props.type, this.props.orientation, this.props.leftMargin, this.props.title, this.props.bottomMargin, this.props.values, this.props.labels, this.props.height, this.props.topMargin, this.props.xAxisTitle, this.props.yAxisTitle);
     }

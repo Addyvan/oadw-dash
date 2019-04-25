@@ -1,5 +1,6 @@
 import React from "react";
 import DataCard from "../../assets/graphs/card.js";
+import {Col} from 'reactstrap'
 
 class CollabTotalCards extends React.Component {
   render() {

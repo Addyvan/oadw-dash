@@ -16,12 +16,12 @@ class PlotAbstract extends React.Component {
     });
   }
   
-  renderGraph(x, y, type, orientation, leftMargin, title, bottomMargin, values, labels, height, topMargin, width, fill, xAxisTitle, yAxisTitle) {
+  renderGraph(x, y, type, orientation, leftMargin, title, bottomMargin, values, labels, height, topMargin, xAxisTitle, yAxisTitle) {
     console.log(xAxisTitle)
     if (this.state.showingGraph)
-      return <Graph xAxisTitle = {xAxisTitle} yAxisTitle = {yAxisTitle} fill = {fill} width = {width} x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} values = {values} labels = {labels} height = {height} topMargin = {topMargin}/>;
+      return <Graph x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} values = {values} labels = {labels} height = {height} topMargin = {topMargin} xAxisTitle = {xAxisTitle} yAxisTitle = {yAxisTitle}/>;
     else
-      return <DataTable width = {width} x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} bottomMargin = {bottomMargin} values = {values} labels = {labels} height = {height} topMargin = {topMargin}/>;
+      return <DataTable x = {x} y={y} type={type} orientation={orientation} leftMargin={leftMargin} title = {title} bottomMargin = {bottomMargin} values = {values} labels = {labels} height = {height} topMargin = {topMargin}/>;
   }
 }
 
